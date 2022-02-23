@@ -55,6 +55,9 @@ def go():
     elif start == 'PB' and end == 'MB':
         input1 = input1 * 1000000000
         print(str(input1) + end)
+    elif start == 'TB' and end == 'MB':
+        input1 = input1 * 1000000
+        print(str(input1) + end)
 
     else:
         print(input1 + start)
@@ -63,7 +66,7 @@ def go():
 print("Welcome to data converter")
 input("Press \'Enter\' to start ")
 go()
-print("Would you like to play again?")
+print("Would you like to execute again?")
 again = input("Enter \'Y\' for Yes and \'N\' for No: ")
 if again == 'y' or again == 'Y':
     go()
